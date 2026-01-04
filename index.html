@@ -29,7 +29,7 @@
 
     <div class="header-actions">
       <a href="tel:+79999999999" class="header-phone">+7 999 999 99 99</a>
-      <a href="#contact" class="btn btn-primary btn-small">Записаться</a>
+      <a href="#contact" class="btn primary small">Записаться</a>
     </div>
 
   </div>
@@ -37,13 +37,13 @@
 
 <section class="hero">
   <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Профессиональный автосервис<br>в Москве</h1>
+    <div>
+      <h1>Профессиональный автосервис в Москве</h1>
       <p>Диагностика, ремонт и обслуживание автомобилей. Честно и аккуратно.</p>
 
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Оставить заявку</a>
-        <a href="tel:+79999999999" class="btn btn-outline">Позвонить</a>
+        <a href="#contact" class="btn primary">Оставить заявку</a>
+        <a href="tel:+79999999999" class="btn outline">Позвонить</a>
       </div>
     </div>
 
@@ -81,18 +81,15 @@
 
     <div>
       <h2>Запись на ремонт</h2>
-
       <form class="repair-form" onsubmit="return submitForm(event)">
         <div class="form-group">
           <label>Имя</label>
           <input required>
         </div>
-
         <div class="form-group">
           <label>Телефон</label>
           <input required placeholder="+7 999 999 99 99">
         </div>
-
         <div class="form-group">
           <label>Услуга</label>
           <select required>
@@ -102,18 +99,22 @@
             <option>Ремонт</option>
           </select>
         </div>
-
-        <button type="submit" class="btn btn-primary btn-submit">
-          Отправить заявку
-        </button>
+        <button class="btn primary form-btn">Отправить заявку</button>
       </form>
-
-      <div id="formMsg"></div>
     </div>
 
     <div class="contact-info">
+      <h3>Контакты</h3>
       <p><strong>Адрес:</strong> Москва, ул. Современная</p>
       <p><strong>Телефон:</strong> +7 999 999 99 99</p>
+      <p><strong>Режим работы:</strong><br>Пн–Сб: 9:00–20:00<br>Вс: выходной</p>
+
+      <div class="socials">
+        <a href="https://t.me/your_channel" target="_blank"
+           class="social-btn telegram">Telegram</a>
+        <a href="https://max.ru" target="_blank"
+           class="social-btn max">MAX</a>
+      </div>
     </div>
 
   </div>
@@ -123,11 +124,11 @@
   <div class="container footer-grid">
     <div>
       <strong>АвтоМастер</strong>
-      <p>Ремонт и обслуживание автомобилей</p>
+      <p>Профессиональный автосервис в Москве</p>
     </div>
     <div>
-      <p>Пн–Сб: 9:00–20:00</p>
-      <p>Вс: выходной</p>
+      <p>Диагностика и ремонт</p>
+      <p>Кузовные работы</p>
     </div>
     <div>
       <p>Москва, ул. Современная</p>
@@ -135,6 +136,8 @@
     </div>
   </div>
 </footer>
+
+<button class="scroll-top" id="scrollTopBtn">↑</button>
 
 <script src="script.js"></script>
 </body>
